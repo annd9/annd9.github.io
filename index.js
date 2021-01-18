@@ -25,3 +25,11 @@ var animation = bodymovin.loadAnimation({
     autoplay: true,
     path: "animation_beginner.json"
   });
+
+  var animation = bodymovin.loadAnimation({
+    container: document.getElementById("animation_aerial"),
+    renderer: "svg",
+    loop: true,
+    autoplay: true,
+    path: "animation_aerial.json"
+  });

@@ -247,14 +247,18 @@ html {
     margin-left: 180px;
     min-width: 800px;
     flex-grow: 1;
-    clip-path: inset(100px 0px 0px 0px);
+  }
+
+  #animation_aerial {
+    margin-left: 180px;
+    min-width: 800px;
+    flex-grow: 1;
   }
   
   #animation_beginner {
     margin-left: 180px;
     min-width: 800px;
     flex-grow: 1; 
-    clip-path: inset(100px 0px 0px 0px);
   }
   
   button{
