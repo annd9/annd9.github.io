@@ -18,10 +18,18 @@ for (let i = 0; i < slides.length; i++) {
 }
 
 TweenMax.set(".dots", {yPercent:-50});
-TweenMax.set(navDots[0], {backgroundColor:"#000"});
+TweenMax.set(navDots[0], {backgroundColor:"#2D4159"});
 
+var prevTime = new Date().getTime();
 
 function slideAnim(e) {
+  var curTime = new Date().getTime();
+  var timeDiff = curTime - prevTime;
+  prevTime = curTime;
+  if(!timeDiff || timeDiff <= 200){
+    return
+  }
+
   if (TweenMax.isTweening( container )) {return;}
   
   oldSlide = activeSlide;
@@ -36,7 +44,7 @@ function slideAnim(e) {
     return;
   }
   TweenMax.to("#panelWrap", dur, { scrollTo: slides[activeSlide] });
-  TweenMax.to(navDots[activeSlide], dur, { backgroundColor:"#000", ease:Linear.easeNone });
+  TweenMax.to(navDots[activeSlide], dur, { backgroundColor:"#2D4159", ease:Linear.easeNone });
   TweenMax.to(navDots[oldSlide], dur, { backgroundColor:"#fff", ease:Linear.easeNone });
 }
 

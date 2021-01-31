@@ -13,6 +13,7 @@ html {
     display: flex;
     align-items: center;
     height: 100vh;
+    width: 100vw;
     justify-content: space-between;
   }
 
@@ -95,7 +96,7 @@ html {
   }
 
   ul li {
-    padding: 30px;
+    height: 2em;
   }
 
   
@@ -226,50 +227,19 @@ html {
   }
 
   /* ------------- */
-  .content {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 115px;
-  }
 
   .content-body {
-    flex-grow: 0;
-    width: 445px;
-    margin-left: 20px;
-    z-index: 3;
+    flex-grow: 1;
+    width: 10vw;
+    min-width: 400px;
+    margin-left: 40px;
   }
 
   .content-body-text {
     margin-left: 6px;
   }
 
-  #animation_advanced {
-    margin-left: 180px;
-    min-width: 800px;
+  .animation{
     flex-grow: 1;
-  }
-
-  #animation_aerial {
-    margin-left: 180px;
-    min-width: 800px;
-    flex-grow: 1;
-  }
-  
-  #animation_beginner {
-    margin-left: 180px;
-    min-width: 800px;
-    flex-grow: 1; 
-  }
-  
-  button{
-    width:100%;
-    height:80px;
-    position:relative;
-    background:#2D4159;
-    text-transform:uppercase;
-    color:#F5EFE8;
-    letter-spacing:1px;
-    border:none;
-    font-size:15px;
-    outline:none;
+    height: 85%;
   }
