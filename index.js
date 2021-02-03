@@ -10,6 +10,25 @@ $(function() {
       
   });
 
+  $(function() {
+  
+    $("ul li").click(function(e) {
+      
+      $(".menu-overlay").toggleClass("open");
+      $(".menu").toggleClass("open");
+  
+    });
+      
+  });
+
+  var animation = bodymovin.loadAnimation({
+    container: document.getElementById("animation_homepage"),
+    renderer: "svg",
+    loop: true,
+    autoplay: true,
+    path: "animation_homepage.json"
+  });
+
   var animation = bodymovin.loadAnimation({
   container: document.getElementById("animation_advanced"),
   renderer: "svg",
@@ -33,3 +52,8 @@ var animation = bodymovin.loadAnimation({
     autoplay: true,
     path: "animation_aerial.json"
   });
+
+function sendEmail() 
+{
+    window.location.assign("mailto:yogastudio@platzhalter.com");
+}

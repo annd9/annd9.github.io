@@ -18,7 +18,7 @@ for (let i = 0; i < slides.length; i++) {
 }
 
 TweenMax.set(".dots", {yPercent:-50});
-TweenMax.set(navDots[0], {backgroundColor:"#2D4159"});
+TweenMax.set(navDots[0], {backgroundColor:"#14191D"});
 
 var prevTime = new Date().getTime();
 
@@ -44,8 +44,8 @@ function slideAnim(e) {
     return;
   }
   TweenMax.to("#panelWrap", dur, { scrollTo: slides[activeSlide] });
-  TweenMax.to(navDots[activeSlide], dur, { backgroundColor:"#2D4159", ease:Linear.easeNone });
-  TweenMax.to(navDots[oldSlide], dur, { backgroundColor:"#fff", ease:Linear.easeNone });
+  TweenMax.to(navDots[activeSlide], dur, { backgroundColor:"#14191D", ease:Linear.easeNone });
+  TweenMax.to(navDots[oldSlide], dur, { backgroundColor:"#F5EFE8", ease:Linear.easeNone });
 }
 
 window.addEventListener("wheel", slideAnim);
