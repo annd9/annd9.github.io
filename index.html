@@ -1,188 +1,129 @@
-<!DOCTYPE html>
-<html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style-2.css">
+
     <title>Yogapunkt</title>
-    <!--
-        /**
-        * @license
-        * MyFonts Webfont Build ID 171625
-        * 
-        * The fonts listed in this notice are subject to the End User License
-        * Agreement(s) entered into by the website owner. All other parties are 
-        * explicitly restricted from using the Licensed Webfonts(s).
-        * 
-        * You may obtain a valid license from one of MyFonts official sites.
-        * http://www.fonts.com
-        * http://www.myfonts.com
-        * http://www.linotype.com
-        *
-        */
-    -->
-    <link rel="stylesheet" type="text/css" href="MyFontsWebfontsKit.css">
-    <link rel="stylesheet" href="style.css">
+    </head>
+     <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a href="#animation_homepage">
+                    <img src="Logo.svg" alt="Home" style="height:32px;">
+                  </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <a class="nav-link" href="#animation_beginner">Kurse</a>
+                  <a class="nav-link" href="#animation_aerial">Workshops</a>
+                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Kontakt</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+        <div id="panelWrap">
+        <section>
+            <div class="container-xxl">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="animation" id="animation_homepage"></div> 
+                    </div>    
+                    <div class="col-md-7">
+                        <h2>Namasté, schön das du hier bist</h2>  
+                        <h1 class="display-1">Dein Yogastudio <br> in Sterkrade</h1>  
+                         <!-- <h3>ÜBER DAS STUDIO</h3> -->
+                        <p>Bei Yogapunkt ist jede und jeder herzlich willkommen. Ich bin Anke, eine vom BDY zertifizierte Yogalehrerin, und biete in meinem wunderschönen Studio in Oberhausen Sterkrade fundierten und abwechslungsreichen Yogaunterricht an. Ich arbeite mit kleinen Gruppen, um individuell auf Dich eingehen zu können. Ich freue mich auf Dich!</p>
+                    </div>    
+                 </div>
+             </div>
+        </section>
+        <section>
+            <div class="container-xxl">
+                <div class="row">
+                    <div class="col-md-5">  
+                        <h1 class="display-1"> Yoga für Anfänger</h1>
+                        <h4>Mittwochs 10:00 - 11:30 Uhr</h4>
+                        <p> Dieser Kurs unterstützt dich dabei, Achtsamkeit und Gelassenheit in den Alltag zu bringen. Gleichzeitig wird Deine Ausdauer, Balance und Beweglichkeit gefördert. Die Yogapraxis erlaubt uns durch konzentrierte Atemübungen, unseren Geist zu fokussieren und uns aus dem permanenten Strom der Gedanken zu lösen.
+                            <br>
+                            <br>
+                            Vorkenntnisse sind nicht erforderlich. Der Übungsraum bietet entsprechende Hilfsmittel für eine abwechslungsreiche Yogastunde. Spaß an Bewegung und bequeme Kleidung ist von Vorteil.</p>
+                        <a href="https://www.febw-oberhausen.de/index.php?id=111&dsnr=1941&kathaupt=213&kathauptalt=11"><button>Zum Kurs anmelden</button></a>
+                    </div> 
+                    <div class="col-md-7">
+                        <div class="animation" id="animation_beginner"></div> 
+                    </div>       
+                 </div>
+             </div>
+        </section>
+        <section>
+            <div class="container-xxl">
+                <div class="row">
+                    <div class="col-md-5">  
+                        <h1 class="display-1">Yoga für <br>Fortgeschrittene</h1>
+                        <h4>Auf Anfrage</h4>
+                        <p>Dieser Kurs ist darauf ausgerichtet deine Beweglichkeit, dein Gleichgewicht und deine Kraft zu verbessern. Die kräftigenden und dehnenden Übungen energetisieren und beleben deinen Körper. Für diesen Kurs sind erste Yoga-Erfahrungen von Vorteil. Allerdings werden im Kurs zu den komplexeren Übungen auch entsprechende Variationen angeboten.</p>
+                        <p>Lerne und praktiziere in deinem individuellen Tempo, im Einklang mit deinem Körper. Unser Übungsraum bietet entsprechende Hilfsmittel wie Kissen, Blöcke und Decken, um den Körper zu unterstützen.</p>
+                        <button onclick="sendEmail();">Kurs Anfragen</button>
+                    </div> 
+                    <div class="col-md-7">
+                        <div class="animation" id="animation_advanced"></div> 
+                    </div>       
+                 </div>
+             </div>
+        </section>
+        <section>
+            <div class="container-xxl">
+                <div class="row">
+                    <div class="col-md-5">  
+                        <h1 class="display-1">Aerial Yoga Workshops</h1>
+                        <h4>Auf Anfrage</h4>
+                        <p>Beim Aerial Yoga werden alle Asanas mit Hilfe eines von der Decke hängenden Tuches praktiziert. Koordination, Kraft und Flexibilität werden mit Leichtigkeit trainiert. In diesem Workshop erlebst du das wunderschöne Gefühl der Schwerelosigkeit und erlebst die Yogapraxis auf eine komplett neue Art und Weise.</p>
+                        <p>Die Gruppengröße wird bedacht klein gehalten, damit du bestmöglich betreut werden kannst. Vorkenntnisse sind nicht erforderlich.</p>
+                        <button onclick="sendEmail();">Workshop Anfragen</button>
+                    </div> 
+                    <div class="col-md-7">
+                        <div class="animation" id="animation_aerial"></div>                     </div>       
+                 </div>
+             </div>
+        </section>
+        <section id="footer">
+            <footer class="site-footer">
+                <ul class="footer-info">
+                    <li>Yogapunkt Sterkrade</li>
+                    <li>Von-Trothastr.125</li>
+                    <li>46149 Oberhausen</li> 
+                    <li>Eingang im Hof</li>
+                </ul>
+                <ul class="footer-info">
+                    <li>0208 30666346</li>
+                    <li>Mo-Fr 8:00-16:00 Uhr</li>
+                </ul>
+                <ul class="footer-info">
+                    <li>Anke Drießen</li>
+                    <li><a href="yoga-sterkrade.de">Impressum</a></li> 
+                </ul>
+                <button onclick="sendEmail();">Kontakt</button>
+        </footer>
+        </section> 
+        </div> 
 
-
-</head>
-<body>
-    
-    <!-- MENU BUTTON -->
-    
-        <div class="menu">
-            <span class="menu-circle"></span>
-            <a href="#" class="menu-link">
-                <span class="menu-icon">
-                    <span class="menu-line menu-line-1"></span>
-                    <span class="menu-line menu-line-2"></span>
-                    <span class="menu-line menu-line-3"></span>
-                </span>
-            </a>
-        </div>
-        
-        <div class="menu-overlay">
-            <ul class="overlay-info">
-                <li><a href="#kurse_1">Anfänger</a></li>
-                <li><a href="#kurse_2">Fortgeschrittene</a></li>
-                <li><a href="#workshops">Aerial Yoga</a></li>
-                <li><a href="#footer">Kontakt</a></li>
-                <li><a href="yoga-sterkrade.de">Impressum</a></li>    
-            </ul>
-            
-        </div>
-        
-
-    <!--PANEL WRAP-->
-       
-    <div id="panelWrap">
-
-        <!--HOMEPAGE-->
-
-            <section>
-
-                <div class="animation-homepage" id="animation_homepage"></div> 
-                
-                <div class="homepage-content-body">
-                    <h2>Namasté, schön das du hier bist</h2>    
-                    <h1>Dein Yogastudio <br> in Sterkrade </h1>
-
-                        <div class="homepage-content-body-text">
-
-                            <div class="homepage-content-body-text-column">
-                                <h3>KURSE</h3>
-                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
-                            </div>
-
-                            <div class="homepage-content-body-text-column">
-                                <h3>STUDIO</h3>
-                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
-                            </div>
-
-                            <div class="homepage-content-body-text-column">
-                                <h3>KONTAKT</h3>
-                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
-                            </div>
-                            
-                        </div>
-                        
-                    <div class="scroll-down"></div>
-                        
-                </div>    
-            
-            </section>
-
-   
-        <!--BEGINNER-->
-
-            <section id="kurse_1">
-
-                    <div class="content-body">
-                        <h1>Yogakurs für Anfänger</h1>
-
-                        <div class="content-body-text">
-                             <p class="hours">Montags 17:30 - 18:00 Uhr</p>    
-                             <p>Dieser Kurs unterstützt dich dabei, Achtsamkeit und Gelassenheit in den Alltag zu bringen. Gleichzeitig wird Deine Ausdauer, Balance und Beweglichkeit gefördert.</br>Die Yogapraxis erlaubt uns durch konzentrierte Atemübungen, unseren Geist zu fokussieren und uns aus dem permanenten Strom der Gedanken zu lösen.</br></br>Vorkenntnisse sind nicht erforderlich. Der Übungsraum bietet entsprechende Hilfsmittel für eine abwechslungs-</br>reiche Yogastunde. Spaß an Bewegung und bequeme Kleidung ist von Vorteil.</p> 
-                             <a href="https://www.febw-oberhausen.de/index.php?id=111&dsnr=1941&kathaupt=213&kathauptalt=11"><button>Anmelden</button></a>
-                        </div>
-                     </div>
-                    
-                    <div class="animation" id="animation_beginner"></div> 
-            
-            </section>
-
-        <!--ADVANCED-->
-             
-            <section id="kurse_2">
-
-                     <div class="content-body">
-                         <h1>Yogakurs für Fortgeschrittene</h1>
-
-                            <div class="content-body-text">
-                             <p class="hours">Montags 17:30 - 18:00 Uhr</p>    
-                             <p>Dieser Kurs ist darauf ausgerichtet deine Beweglichkeit, dein Gleichgewicht und deine Kraft zu verbessern. Die kräftigenden und dehnenden Übungen energetisieren und beleben deinen Körper. Für diesen Kurs sind erste Yoga-Erfahrungen von Vorteil. Allerdings werden im Kurs zu den komplexeren Übungen auch entsprechende Variationen angeboten. Lerne und praktiziere in deinem individuellen Tempo, im Einklang mit deinem Körper. Unser Übungsraum bietet entsprechende Hilfsmittel wie Kissen, Blöcke und Decken, um den Körper zu unterstützen.</p>
-                             <button>Anmelden</button>
-                             </div>
-                     </div>
-                    
-                     <div class="animation" id="animation_advanced"></div> 
-
-             </section>
-    
-        <!--AERIAL-->
-       
-            <section id="workshops">
-
-                    <div class="content-body">
-                        <h1>Aerial Yoga Workshops</h1>
-
-                            <div class="content-body-text">
-                            <p class="hours">Auf Anfrage</p>    
-                            <p>Beim Aerial Yoga werden alle Asanas mit Hilfe eines von der Decke hängenden Tuches praktiziert. Koordination, Kraft und Flexibilität werden schwerelos und mit Leichtigkeit trainiert. In diesem Workshop erlebst du das wunderschöne Gefühl der Schwerelosigkeit und erlebst die Yogapraxis auf eine komplett neue Art und Weise. Die Gruppengröße wird bedacht klein gehalten, damit du bestmöglich betreut werden kannst. Vorkenntnisse sind nicht erforderlich.</p>
-                                <button onclick="sendEmail();">Anfragen</button>
-                            </div>
-                    </div>
-                    
-                    <div class="animation" id="animation_aerial"></div> 
-
-            </section>
-
-        <!--FOOTER-->
-            <section id="footer">
-                <footer class="site-footer">
-                        <ul class="footer-info">
-                            <li>Yogapunkt Sterkrade</li>
-                            <li>Von-Trothastr.125</li>
-                            <li>46149 Oberhausen</li> 
-                            <li>Eingang im Hof</li>
-                        </ul>
-                        <ul class="footer-info">
-                            <li>0208 30666346</li>
-                            <li>Mo-Fr 8:00-16:00 Uhr</li>
-                        </ul>
-                        <ul class="footer-info">
-                            <li>Anke Drießen</li>
-                            <li><a href="yoga-sterkrade.de">Impressum</a></li> 
-                        </ul>
-                        <button onclick="sendEmail();">Kontakt</button>
-                </footer>
-            </section>  
-        
-    </div>
-    
-    <div class="dots"></div>
-
-
-
-    
-    <!--SCRIPTS-->
-
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/plugins/ScrollToPlugin.min.js"></script>
-      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.5/lottie.min.js" integrity="sha512-0bCDSnaX8FOD9Mq8WbHcDwshXwCB5V4EP+UBu87WQgga2b7lAsuEbaSmIZjH/XEmNhJuhrPbFHemre5HZwrk9w==" crossorigin="anonymous"></script>
-      <script src="index.js"></script>
-      <script src="panelwrap.js"></script>
-  
       
-</body>
+ 
+
+
+        <!-- Scripts -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.5/lottie.min.js" integrity="sha512-0bCDSnaX8FOD9Mq8WbHcDwshXwCB5V4EP+UBu87WQgga2b7lAsuEbaSmIZjH/XEmNhJuhrPbFHemre5HZwrk9w==" crossorigin="anonymous"></script>
+        <script src="index.js"></script>
+        <script src="panelwrap.js"></script>
+
+      </body>
 </html>
