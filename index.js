@@ -52,8 +52,3 @@ var animation = bodymovin.loadAnimation({
     autoplay: true,
     path: "animation_aerial.json"
   });
-
-function sendEmail() 
-{
-    window.location.assign("mailto:yogastudio@platzhalter.com");
-}

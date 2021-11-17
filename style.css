@@ -6,14 +6,16 @@ html {
   scroll-snap-type: y mandatory;
 }
 
+body{
+  background-color: #F5EFE8;
+}
+
 
 #panelWrap {
   height: 100vh;
-  scroll-snap-align: start;
 }
 
 section {
-  background-color: #F5EFE8;
   min-height: 100%;
   color: #14191D;
   display: flex;
@@ -21,15 +23,20 @@ section {
   scroll-snap-align: start;
 }
 
+.row{
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+}
+
 * {
   box-sizing: border-box;
 }
 
-.col-md-5{
+.col-lg-5{
   z-index: 2;
 }
 
-.col-md-7{
+.col-lg-7{
   z-index: 1;
 }
 
@@ -74,6 +81,11 @@ p {
   line-height: 1.5;
 }
 
+.btn{
+  margin: 0;
+  padding: 0;
+}
+
 button {
   outline: 0;
   margin-top: 20px;
@@ -88,7 +100,6 @@ button {
 }
   
 button:hover {
-    
   background: #14191D;
   color: #F5EFE8;
   cursor: pointer;
@@ -106,14 +117,34 @@ button:hover {
   line-height: 1.4;
   list-style-type: none;
   text-decoration: none;
-  padding-left: 8vw;
-  padding-top: 2vw;
 }
 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (max-width: 768px) {
-  .animation {
-  padding: 40px;
-}
+/*@media only screen and (max-width: 768px) {/*
+  
+  /* When a screen is 992px or smaller, the background color will be pink */
+@media screen and (max-width: 992px) {
+  html{
+    scroll-snap-type: none;
+  }
+
+  .section{
+    scroll-snap-align: none;
+  }
+
+  #panelWrap{
+    padding: 36px;
+  }
+
+  .animation{
+    padding: 40px 0px 80px 0px;
+    justify-content: center;
+  }
+
+  .btn{
+    display: flex;
+    justify-content: center;
+  }
+  
 }
