@@ -1,26 +1,3 @@
-$(function() {
-  
-    $(".menu-link").click(function(e) {
-      e.preventDefault();
-      
-      $(".menu-overlay").toggleClass("open");
-      $(".menu").toggleClass("open");
-  
-    });
-      
-  });
-
-  $(function() {
-  
-    $("ul li").click(function(e) {
-      
-      $(".menu-overlay").toggleClass("open");
-      $(".menu").toggleClass("open");
-  
-    });
-      
-  });
-
   var animation = bodymovin.loadAnimation({
     container: document.getElementById("animation_homepage"),
     renderer: "svg",

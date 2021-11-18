@@ -10,12 +10,12 @@ body{
   background-color: #F5EFE8;
 }
 
-
 #panelWrap {
   height: 100vh;
 }
 
 section {
+  padding-top: 40px;
   min-height: 100%;
   color: #14191D;
   display: flex;
@@ -45,7 +45,11 @@ section {
   z-index: 3;
   font-family: Silka, Arial, sans-serif;
   width: 100vw;
-  padding: 10px 20px;
+  padding: 20px 0px;
+}
+
+.nav-item{
+  margin-left: 32px;
 }
 
 
@@ -86,7 +90,7 @@ p {
   padding: 0;
 }
 
-button {
+.button-styled {
   outline: 0;
   margin-top: 20px;
   background: none;
@@ -99,7 +103,7 @@ button {
   transition: all 0.1s ease;
 }
   
-button:hover {
+.button-styled:hover {
   background: #14191D;
   color: #F5EFE8;
   cursor: pointer;
@@ -146,5 +150,8 @@ button:hover {
     display: flex;
     justify-content: center;
   }
-  
+
+  .nav-item{
+    margin-left: 0px;
+  }
 }
