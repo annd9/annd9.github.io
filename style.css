@@ -109,18 +109,43 @@ p {
   cursor: pointer;
 }
 
-.site-footer{
-  background-color: #14191D;
-  width: 100%;
+#Kontakt{
+  display: flex;
+  align-items: flex-end;
+}
+
+#Über-mich {
+  align-items: center;
+}
+
+.image{
+  margin: 8vh 4vh 4vh 4vh; 
+}
+
+
+.divider{
+  background-color:#14191D;
+  height: 2px;
+  opacity: 40%;
 }
 
 .footer-info {
   font-family: Silka, Arial, sans-serif;
   font-size: 1.2em;
-  color: #F5EFE8;
-  line-height: 1.4;
+  line-height: 1.6;
   list-style-type: none;
   text-decoration: none;
+  padding-bottom: 20px;
+}
+
+.list-header{
+  font-family: joane, Arial, sans-serif;
+  font-size: 1.2em;
+  padding: 40px 0px 8px 0px;
+}
+
+#links{
+  padding: 20px;
 }
 
 
