@@ -148,6 +148,9 @@ p {
   padding: 20px;
 }
 
+.space{
+  height: 16vh;
+}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 /*@media only screen and (max-width: 768px) {/*
